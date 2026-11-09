@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sasco | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body id="top">
+
+    <!-- شريط التنقل العلوي -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">Sasco<span>.lol</span></div>
+            
+            <nav class="nav-links">
+                <a href="#about" class="active">About</a>
+                <a href="#expertise">Expertise</a>
+                <a href="#projects">Projects</a>
+                <a href="#why-me">Why Me</a>
+            </nav>
+
+            <div class="nav-actions">
+                <!-- زر تبديل الوضع (شمس وقمر مدمجين) -->
+                <button id="theme-toggle" class="action-btn" title="Toggle Mode">
+                    <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M12.3 22h-.1c-5.5 0-10-4.5-10-10V11.5c0-.6.5-1.1 1.1-1.1.5 0 1 .3 1.1.8.8 2.5 3.1 4.2 5.7 4.2 2.9 0 5.4-2.1 5.9-5 .1-.5.6-.9 1.1-.8.6.1 1 .5 1 1.1v.2c-.3 6.1-5.2 11.1-11.2 11.1zm2.8-17.9c-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0 1.2-1.2 2.9-1.9 4.7-1.9 3.7 0 6.7 3 6.7 6.7 0 1.8-.7 3.4-1.9 4.7-.4.4-.4 1 0 1.4.4.4 1 .4 1.4 0 1.6-1.6 2.5-3.8 2.5-6.1 0-4.8-3.9-8.7-8.7-8.7-2.3 0-4.5.9-6.1 2.5z"/></svg>
+                    <svg class="icon-sun" viewBox="0 0 24 24" fill="currentColor"><path d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zM2 13h2c.55 0 1-.45 1-1s-.45-1-1-1H2c-.55 0-1 .45-1 1s.45 1 1 1zm18 0h2c.55 0 1-.45 1-1s-.45-1-1-1h-2c-.55 0-1 .45-1 1s.45 1 1 1zM11 2v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1s-1 .45-1 1zm0 18v2c0 .55.45 1 1 1s1-.45 1-1v-2c0-.55-.45-1-1-1s-1 .45-1 1zM5.99 4.58c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41L5.99 4.58zm12.37 12.37c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06zm-12.37 1.06c-.39.39-.39 1.03 0 1.41s1.03.39 1.41 0l1.06-1.06c.39-.39.39-1.03 0-1.41s-1.03-.39-1.41 0l-1.06 1.06zm13.43-13.43c-.39-.39-1.03-.39-1.41 0s-.39 1.03 0 1.41l1.06 1.06c.39.39 1.03.39 1.41 0s.39-1.03 0-1.41l-1.06-1.06z"/></svg>
+                </button>
+                <!-- رابط حساب الديسكورد الشخصي -->
+                <a href="https://discord.com" target="_blank" class="action-btn" title="My Discord Account">
+                    <svg class="discord-nav-svg" viewBox="0 0 127.14 96.36" fill="currentColor"><path d="M107.7,8.07A105.15,105.15,0,0,0,77.26,0a77.19,77.19,0,0,0-3.3,6.83A96.67,96.67,0,0,0,53.22,6.83,77.19,77.19,0,0,0,49.88,0,105.15,105.15,0,0,0,19.44,8.07C3.66,31.58-1.86,54.65,1,77.53A105.73,105.73,0,0,0,32,96.36a74.37,74.37,0,0,0,6.72-11A68.6,68.6,0,0,1,28.1,79.91c.91-.67,1.81-1.37,2.67-2.1a75.22,75.22,0,0,0,65.6,0c.87.73,1.76,1.43,2.67,2.1a68.86,68.86,0,0,1-10.59,5.43,73.61,73.61,0,0,0,6.72,11,105.52,105.52,0,0,0,31.05-18.83C129.58,49.49,123.71,26.68,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53S36.18,40.36,42.45,40.36,53.87,46,53.87,53,48.72,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.24,60,73.24,53S78.41,40.36,82.69,40.36,94.11,46,94.11,53,89,65.69,82.69,65.69Z"/></svg>
+                </a>
+                <!-- رابط سيرفر Krypton Studio -->
+                <a href="https://discord.gg" target="_blank" class="action-btn logo-k-btn" title="Krypton Studio">K</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- القسم الترحيبي -->
+    <section class="hero-section">
+        <div class="container">
+            <span class="status-badge"><span class="dot"></span> Available for setups</span>
+            <h1 class="main-title">Hello, I'm Sasco</h1>
+            <h2 class="sub-description">Discord Server Setup Designer<span class="typing-cursor">|</span></h2>
+            <p>Crafting high-tier Discord communities, specialized permission architectures, and highly functional server structures with sleek visual aesthetics.</p>
+            <div class="hero-buttons">
+                <a href="https://discord.gg" target="_blank" class="btn-primary">Join Discord</a>
+                <a href="#projects" class="btn-secondary">Explore Projects</a>
+            </div>
+            <div class="counter-box">
+                <h3>+3</h3>
+                <p>Successful projects completed</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم من أنا (About) -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-card">
+                <div class="avatar-circle">S</div>
+                <div class="about-text">
+                    <span class="section-tag">About Me</span>
+                    <h3>Sasco</h3>
+                    <h4>Professional Discord Server Setup Designer</h4>
+                    <p>I'm a dedicated Discord Server Setup Designer who builds clean, scalable, and fully optimized community environments. I specialize in designing advanced configurations, layout hierarchies, and precise permission systems to make sure every community performs at its best.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الخبرات -->
+    <section id="expertise" class="expertise-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Core Expertise & Skills</h2>
+                <p class="section-desc">Focused areas where I deliver high-quality, professional results.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Server Setup Designer</h3>
+                    <p>Modern, fully organized Discord servers with clean channel layouts, custom hierarchies, and tailored community configurations.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Advanced Security & Permissions</h3>
+                    <p>Bulletproof roles structure, secure staff systems, anti-raid permission distribution, and professional channel locks.</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Community Optimization</h3>
+                    <p>Fine-tuning onboarding flows, welcoming systems, auto-moderation rules, and aesthetic formatting for maximum engagement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم Projects -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p class="section-desc">High-impact solutions built with precision.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-tags"><span>Setup Design</span></div>
+                    <h3>Community Server Frameworks</h3>
+                    <p>Complete professional servers designed to display a community's core identity, custom categories, and seamless layout structures.</p>
+                    <div class="project-tech"><span>Tech stack</span><span>Discord Setup</span></div>
+                </div>
+                <div class="project-card">
+                    <div class="project-tags"><span>Architecture</span></div>
+                    <h3>Advanced Role & Permission Systems</h3>
+                    <p>Highly secure layouts built for gaming and professional networks, featuring fully optimized staff panels and anti-raid setups.</p>
+                    <div class="project-tech"><span>Tech stack</span><span>Discord Infrastructure</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم Why Choose Me -->
+    <section id="why-me" class="why-me-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Me?</h2>
+                <p class="section-desc">Commitment to excellence in every project.</p>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Perfect Work</h3>
+                    <p>Every server structure is finished to the fullest, with close attention to details and clean layouts.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Fast Response</h3>
+                    <p>Quick replies and fast setup delivery throughout the entire layout planning process.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Easy Communication</h3>
+                    <p>Clear, friendly conversation so your exact vision comes to life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="contact-title">Have Project In Mind?</h2>
+            <p class="contact-desc">Join the Discord server and tell me what you need.</p>
+            <a href="https://discord.gg" target="_blank" class="btn-primary btn-large">Join Discord</a>
+            <footer class="footer">
+                <p>Sasco. Professional Discord Server Setup Designer</p>
+            </footer>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
